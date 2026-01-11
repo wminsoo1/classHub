@@ -25,7 +25,7 @@ public class Member {
     @Embedded
     private NotificationSetting notificationSetting; // 알림 설정 VO
 
-    @OneToMany(mappedBy = "member", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
     @JoinColumn(name = "member_id")
     private List<PaymentCard> cards = new ArrayList<>();
 
