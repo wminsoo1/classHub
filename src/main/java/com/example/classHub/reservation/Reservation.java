@@ -24,6 +24,8 @@ public class Reservation {
 
     private Long memberId;
 
+    private Long oneDayClassId;
+
     private Long scheduleId;
 
     @Enumerated(EnumType.STRING)
@@ -32,13 +34,5 @@ public class Reservation {
     private LocalDateTime reservedAt;
 
     private int paidPrice;
-
-    private Reservation(Long memberId, Long scheduleId, int price) {
-        this.memberId = memberId;
-        this.scheduleId = scheduleId;
-        this.paidPrice = price;
-        this.status = ReservationStatus.CONFIRMED;
-        this.reservedAt = LocalDateTime.now();
-    }
 
 }
