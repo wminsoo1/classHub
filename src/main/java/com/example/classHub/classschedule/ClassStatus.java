@@ -1,4 +1,4 @@
-package com.example.classHub.oneDayClass;
+package com.example.classHub.classschedule;
 
 import lombok.Getter;
 
